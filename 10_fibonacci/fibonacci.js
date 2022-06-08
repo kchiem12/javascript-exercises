@@ -1,5 +1,11 @@
-const fibonacci = function() {
+const fibonacci = function(index) {
+    num = Number(index); 
 
+    if (num < 0) return 'OOPS';
+
+    if (num == 1 || num == 2) return 1;
+
+    return fibonacci(num - 1) + fibonacci(index - 2);
 };
 
 // Do not edit below this line
